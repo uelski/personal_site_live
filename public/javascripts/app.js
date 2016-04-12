@@ -3,16 +3,20 @@ $(document).ready(function() {
 console.log('connected');
 
 $("#about_button").click(function() {
-  scrollTime('about')
+  scrollTime('about');
+  $("#about").show('slow');
 })
 
 $("#projects_button").click(function() {
-  scrollTime('show-up')
+  scrollTime('show-div')
 })
 
 $("#contact_button").click(function() {
   scrollTime('footer')
 })
+
+$('#about').hide();
+
 
 
 

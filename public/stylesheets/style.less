@@ -1,26 +1,88 @@
+@dark: rgb(24, 23, 23);
+@light: rgb(171, 181, 174);
+
+body {
+  background-color: rgb(208, 221, 232);
+}
+
 .header {
   text-align: center;
   background-image: url('http://localhost:3000/images/It_Ran_Away.jpg');
-  height: 1000px;
+  height: 750px;
   margin-top: -25px;
-  nav {
-    margin-top: 25px;
-    background-color: black;
+  margin-right: -35px;
+  p {
+    color: @dark;
+    font-size: 25px;
   }
   h1 {
-    margin-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 75px;
+    padding-top: 50px;
+    color: @dark;
+    font-size: 40px;
+  }
+  #about {
+    font-size: 20px;
+    font-family: 'Lora', serif;
+    margin-top: 100px;
+    color: @dark;
+    background-color: rgba(183, 181, 193, 0.7);
+    border: none;
+    border-radius: 40px 10px;
   }
 }
 
-#about {
-  font-size: 20px;
-  font-family: 'Lora', serif;
+#mason-cos {
+  margin-top: 20px;
+}
+
+.navbar {
+  border-style: none;
+  background-color: @dark;
+  a {
+    color: @light;
+    font-weight: bold;
+  }
+}
+
+.nav>li>a:hover,
+.nav>li>a:focus {
+    background-color: black;
+}
+
+.main-content {
+  margin-left: 25px;
+  color: @dark;
+  span {
+    font-size: 1.5em;
+  }
+  a {
+    color: @dark;
+    font-weight: bold;
+    font-size: 16px;
+  }
 }
 
 .show-pic {
   width: 500px;
 }
 
+.contact-info {
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
 .footer-container {
-  background-color: rgb(163, 195, 201);
+  height: 130px;
+  margin-right: -100px;
+  background-color: rgba(170, 81, 81, 0.8);
+  color: @dark;
+  a {
+    color: @dark;
+  }
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+  }
 }
